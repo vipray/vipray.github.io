@@ -1,0 +1,419 @@
+<html class="home">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        
+        
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        
+        
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <title>
+        Vipray Jain- Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        
+        
+        
+        
+    </head>
+        
+        
+        
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="aspect--landscape page-top">
+        
+        
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll homeScroll" href="#page-top">
+                       <!-- <i style="color: white;" class="fa fa-bolt"></i> --> Home 
+                    </a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll aboutScroll" href="#intro">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll educationScroll" href="#education">education</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll projectsScroll" href="#projects">projects</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll skillsScroll" href="#skills">Skils</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll achievementsScroll" href="#achievements">Achievements</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll posScroll" href="#pos">POS</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <header>
+    	<div class="stars">
+    		<div class="starsTop">
+    		</div>
+    	</div>
+    <img class= "profilePic" src="profilePic2.jpg" alt="profilePic" >
+    <div class = "details">
+    
+    	<p class = "T1">Vipray Jain</p>
+    	<p class = "T2">M.Tech CSE Student</p>
+    	<p class = "T2">IIT Kharagpur</p>
+    	<a target="_blank" href="https://github.com/vipray" ><i class="fa fa-github"></i></a>
+        <a target="_blank" href="mailto:viprayjain18@gmail.com"><i class="fa fa-envelope-square"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jainvipray/"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <!--<a class="store-button store-button--google-play" href="https://play.google.com/store/apps/dev?id=7426622319717311684" target="_blank">
+    
+    </a> -->
+    
+    <div class="chevron hell" >
+    </div>
+    </header>
+    
+    
+    
+    	
+    
+        <script type="text/javascript">  
+        
+        
+        $(function () {
+			  $(document).scroll(function () {
+					var $nav = $(".navbar-fixed-top");
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			  });
+		});
+        
+        
+        
+        
+        
+        
+            $(".homeScroll").click(function() {
+                console.log($(".page-top").offset().top)
+                $('html,body').animate({
+                    scrollTop: $(".page-top").offset().top},
+                    'slow');
+            });    
+        </script>
+        
+        <script type="text/javascript">  
+        $(".chevron").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".intro").offset().top},
+                'slow');
+        });    
+        </script>
+        
+        <script type="text/javascript">  
+            $(".aboutScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".intro").offset().top},
+                    'slow');
+            });    
+        </script>
+                
+        <script type="text/javascript">  
+            $(".educationScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".education").offset().top},
+                    'slow');
+            });    
+        </script>
+                
+        <script type="text/javascript">  
+            $(".projectsScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".projects").offset().top},
+                    'slow');
+            });    
+        </script>
+        
+    
+        <script type="text/javascript">  
+            $(".skillsScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".skills").offset().top},
+                    'slow');
+            });    
+        </script>
+                
+        <script type="text/javascript">  
+            $(".achievementsScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".achievements").offset().top},
+                    'slow');
+            });    
+        </script>
+                
+        <script type="text/javascript">  
+            $(".posScroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".pos").offset().top},
+                    'slow');
+            });    
+        </script>
+        
+    
+        
+        
+        
+        <!-- Download Section -->
+        <section id="intro"  class="content-section text-center intro">
+        <h2>About Me</h2>
+            <div class="download-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                    <p>I am a M.Tech CSE Student of IIT Kharagpur. My current areas of interest are Distributed Systems, Blockchain. I am working under the supervision of <a href="https://cse.iitkgp.ac.in/~sandipc/" target="_blank">Dr. Sandip Chakraborty.</a> I enjoy solving real life problems using automation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="education"  class="content-section text-center education">
+            <h2>Education</h2>
+            <div class="row">
+		        <div class="col-lg-6">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">IIT Kharagpur</p>
+				      <p class="">M. Tech | 2020 - Present <br> Computer Science and Engineering</p>
+				      <p class="">CGPA: 9.13</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-6">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">MITS Gwalior</p>
+				      <p class="">B.E. | 2015 - 2019<br> Computer Science and Engineering</p>
+				      <p class="">CGPA: 7.81</p>
+		        	</div>
+				</div>
+			</div>
+			
+			<div class="row">
+		        <div class="col-lg-6">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">City Central H.S. School Bhind</p>
+				      <p class="">Higher Secondary School | 2014 - 2015</p>
+				      <p class="">Percentage: 90.2%</p>
+            		</div>
+                </div>
+			
+		        <div class="col-lg-6">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">K.D.R Vidhya Niketan Bhind</p>
+				      <p class="">Secondary School | 2012 - 2013</p>
+				      <p class="">Percentage: 86.3%</p>
+            		</div>
+            	</div>
+            </div>
+
+        </section>  
+
+            
+
+
+        
+        <section id="projects"  class="content-section text-center projects">
+            <h2>Projetcs</h2>
+            <div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				    	
+				      <p style = "font-size:4vh; color: #42DCA3;">Dectralized Geospatial Data Sharing System</p>
+				      <p style="font-size:3vh;">M.Tech Project | Ongoing</p>
+				      <p class="">Objective is to build a Decentralized Geospatial Server using Blockchain concept with the help of Hyperledger Fabric. Working on development of Ledger and Smart Contract to store GeoJson and to deal with transactions on Ledger.</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">Face Mask PREDICTOR</p>
+				      <p style="font-size:3vh;">Self Project | 2020</p>
+				      <p class="">Developed a Python script to predict whether mask is at correct position or not using OpenCV and HAAR Cascades. It checks for the visibility of nose and mouth, hence not restricted only on specific masks.</p>
+		        	</div>
+				</div>
+			</div>
+			
+			<div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				    	
+				      <p style = "font-size:4vh; color: #42DCA3;">AI Interviewer</p>
+				      <p style="font-size:3vh;">B.E Project | 2018-19</p>
+				      <p class="">Developed a Q/A application based on Cosine Similarity and IBM Watson Tone Analyser. Used TF-IDF approach for vectorization of sentences and used Scrapping to collect the Q/A dataset.</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">Videos to Slides Converter</p>
+				      <p style="font-size:3vh;">Self Project | 2021</p>
+				      <p class="">Developed a Python script to extract Slides from Lecture's Video using Structural Similarity among the frames of video.</p>
+		        	</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				    	
+				      <p style = "font-size:4vh; color: #42DCA3;">Score Karona</p>
+				      <p style="font-size:3vh;">Self Project | 2021</p>
+				      <p class="">Developed a game based of current pandemic using Pygame and Collaborated with a friend to develop its apk version.</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">Vaccine Availability Notifier</p>
+				      <p style="font-size:3vh;">Self Project | 2021</p>
+				      <p class="">Wrote a browser console JS script to get a notification sound if there is any vaccine availability on cowin.gov.in.</p>
+		        	</div>
+				</div>
+			</div>
+			
+        
+        
+        
+        	<div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				    	
+				      <p style = "font-size:4vh; color: #42DCA3;">Alfaaaz</p>
+				      <p style="font-size:3vh;">Self Project | 2017</p>
+				      <p class="">Developed and maintained a website for writing and sharing thoughts using PHP and MySQL.</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "font-size:4vh; color: #42DCA3;">Matrimonial Website</p>
+				      <p style="font-size:3vh;">Internship | 2017-18</p>
+				      <p class="">Developed a Matrimonial Website for differently abled persons at Function Seven Info Technologies using PHP and MySQL. It include features like friend request, profile recommendation, subscription plans, etc.</p>
+		        	</div>
+				</div>
+			</div>
+		
+        
+        
+        </section>  
+        
+        
+        
+        <section id="skills"  class="content-section text-center education skills">
+            <h2>Skills</h2>
+            <div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "color: #42DCA3;font-size:4vh;">Programming Languages</p>
+				      <p class="">C | C++ | Python | PHP | JAVA | NodeJS | GoLang</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "color: #42DCA3;font-size:4vh;">Tools & Technologies</p>
+				      <p class="">MySQL | Blockchain | Hyperledger Fabric | Web Scrapping | OpenCV | Docker | Git | Postman | Jupyter</p>
+		        	</div>
+				</div>
+			</div>
+			
+        </section>  
+
+        
+
+        
+        <section id="achievements"  class="content-section text-center projects achievements">
+            <h2>Achievements</h2>
+            <div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				      	<p class="">• Winner of Hackathon organized by TECHCOOPERS SOFTWARE SOLUTIONS in 2019.</p>
+						<p class="">• Competed in the Grand Finale of SMART INDIA HACKATHON 2017.</p>
+						<p class="">• Secured 615th position in Pre-Elimination round of SNACKDOWN17 conducted By Codechef.</p>
+						<p class="">• Secured 451th position in ACM-ICPC 2017.</p>
+				    </div>
+				</div>
+            
+		        
+        </section>  
+
+
+		 
+        <section id="pos"  class="content-section text-center projects pos">
+            <h2>POSITIONS OF RESPONSIBILITY</h2>
+            <div class="row">
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "color: #42DCA3;font-size:4vh;">Teaching Assistant</p>
+				      <p class="">Theory and Applications of Blockchain | Fall 2021</p>
+				      <p class="">Designed and graded an assignment on deployment of Smart Contract using Hyperledger Fabric. Delivered a tutorial on Hyperledger Fabric and helped student in installation process.</p>
+				    </div>
+				</div>
+            
+		        <div class="col-lg-12">
+				    <div class="box">
+				      <p style = "color: #42DCA3;font-size:4vh;">Technical Head</p>
+				      <p class="">ACM Student Chapter | 2018 - 2019</p>
+				      <p class="">Conducted a technical event ALGORYTHM including a 24H Hackathon in collaboration with Facebook Developer Circle, Indore. Drafted a problem in a coding competition FAKE ICPC hosted on Codechef.</p>
+				      
+		        	</div>
+				</div>
+			</div>
+			
+        </section>  
+        
+
+            
+    </body>
+    </html>
+    
