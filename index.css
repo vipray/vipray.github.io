@@ -9,7 +9,7 @@ html,body{
     height:100%;
     font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#333;
-    font-weight:600;
+   /* font-weight:600; */
     background: #212529; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -40,26 +40,21 @@ header{
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     font-weight: normal;
-    position: absolute;
+    position: relative;
     margin: auto;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 40%;
-    background: white;
-    -webkit-background-clip: text;
+    top: 15%;
 }
 
 .details a{
 	font-size: 8vh;
 	margin-right: 4vh;
 	background-size:contain;
-	color: #42DCA3;
+	/*color: #42DCA3;*/
 }
 
-.details a : hover{
-	color: green;
-}
 
 
 
@@ -75,9 +70,10 @@ header{
 
 
 .profilePic{
-    width: 200px;
-    height: 200px;
-    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    position: relative;
+    display: block;
     margin: auto;
     left: 0;
     right: 0;
@@ -137,7 +133,6 @@ header{
 
 
 .chevron :hover{
-
     bottom:2%;
 }
 
@@ -184,7 +179,7 @@ footer{
 
 
 a{
-    color: #42DCA3;
+    color: #4273dc;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -193,7 +188,7 @@ a{
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #a3b8e4;
 }
 
 .light{
@@ -263,7 +258,7 @@ a:focus {
 
 .intro{
     margin-left: auto;
-    margin-top: 10%;
+    padding-top: 10%;
 }
 
 .container p{
@@ -271,13 +266,18 @@ a:focus {
 	color: #dbdbdb;
 	border: solid #ffffff;
     border-width: 0 1px;
-;
+    padding: 3vh;
+    text-align: justify;
+}
+
+.logo{
+    width: 8vh;
 }
 
 .education{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*margin-bottom: 20%;*/
     padding-top: 10%;
     color: #dbdbdb;
 }
@@ -285,7 +285,7 @@ a:focus {
 .projects{
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 20%;
+    /*margin-bottom: 20%;*/
     padding-top: 10%;
     color: #dbdbdb;
 }
@@ -313,14 +313,14 @@ footer{
 }
 
 .navbar-nav{
-    font-size: 24px;
+    font-size: 2vh !important;
 }
 
 
 
 @media (min-width: 768px) {
     .navbar-custom {
-        padding: 20px 0;
+        /*padding: 20px 0;*/
         border-bottom: none;
         letter-spacing: 1px;
         background: transparent;
@@ -341,9 +341,11 @@ footer{
     }
 
     .intro {
+        /*
         height: 60% !important;
         margin-left: 10% !important;
         margin-right: 10% !important;
+        */
         margin-top: 10% !important;
     }
     .education{
@@ -352,6 +354,9 @@ footer{
     }
     h2{
         font-size: 4vh;
+    }
+    p{
+        font-size: 2vh !important;
     }
 }
 
