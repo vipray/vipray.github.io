@@ -59,13 +59,13 @@ header{
 
 
 .T1{
-	font-size: 8vh;
+	font-size: 8vh !important;
 	font-weight: bold;
 }
 
 
 .T2{
-	font-size: 4vh;
+	font-size: 4vh !important;
 }
 
 
@@ -130,12 +130,6 @@ header{
     -webkit-animation-name:chevron-fade;
     animation-name:chevron-fade
 }
-
-
-.chevron :hover{
-    bottom:2%;
-}
-
 
 .store-button{
     display:block;
