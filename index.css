@@ -55,6 +55,11 @@ header{
 	/*color: #42DCA3;*/
 }
 
+.links a{
+    font-size: 8vh;
+    background-size: contain;
+}
+
 
 
 
@@ -343,8 +348,10 @@ footer{
         margin-top: 10% !important;
     }
     .education{
+        /*
         margin-left: 0% !important;
         margin-right: 0% !important;
+        */
     }
     h2{
         font-size: 4vh;
